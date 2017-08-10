@@ -16,6 +16,7 @@ myImagePicker.setOnOperationResult(new OnOperationResult() {
 public void onOperationResult(RxPojo pojo) {
 
 //Your code here, you can get the intent using pojo.getIntent()
+
 Toast.makeText(getActivity(), "Result received " , Toast.LENGTH_SHORT).show();
 
 }
