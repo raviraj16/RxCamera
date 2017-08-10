@@ -1,7 +1,10 @@
 # RxCamera
-A Library to open Camera or Gallery using RxAndroid.
 
-Use it in your Fragment, Activity or Dialog like below.
+A Library to open Camera or Gallery using RxAndroid in a very simple way.
+
+
+
+Use it in your Fragment, Activity or Dialog using below code.
 
 RxImagePicker myImagePicker = new RxImagePicker(getActivity());
 
@@ -22,6 +25,9 @@ Toast.makeText(getActivity(), "Result received " , Toast.LENGTH_SHORT).show();
 myImagePicker.chooseImage();
         
         
+
+
+
 //  Don't Forget to add the below line in onActivityResult of your containing Activity
 
 RxEventBus.getEventBus().sendToBus(new RxPojo(data, resultCode));
